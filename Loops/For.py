@@ -24,8 +24,8 @@ for val in sequence:
 
 # Example 2 :-
 
-for i in range(2, 51):
-    print(i)
+# for i in range(2, 51):
+#     print(i)
 
 # range function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
 
@@ -35,3 +35,12 @@ for i in range(2, 51):
 '''
 Make a python Program that scans 2 numbers from the user (start, stop) and print all the numbers between them.
 '''
+
+start = int(input("Enter the starting range : "))
+stop = int(input("Enter the ending range : "))
+
+for i in range(start, stop+1):
+    # print(i)
+    
+    if i%2 != 0:
+        print(i)
